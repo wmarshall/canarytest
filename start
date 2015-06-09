@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -e 
+echo "starting up"
+# sleep 10
+echo "done pointless sleep"
+while true
+do 
+echo "hello world I'm fucked up and my args are [$@]"
+cat "/app/canaryfile"
+echo "read canaryfile"
+sleep 5
+done

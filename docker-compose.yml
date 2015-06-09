@@ -1,0 +1,9 @@
+app1 :
+    build : .
+    volumes : &app_volumes
+    - .:/app
+    command : "/app/start app1"
+app2 :
+    build : .
+    volumes : *app_volumes
+    command : "/app/start app2"
